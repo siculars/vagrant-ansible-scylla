@@ -1,16 +1,16 @@
-##Introduction
+## Introduction
 
 Easily provision 3 [ScyllaDB](https://github.com/scylladb/scylla) nodes across 3 VMs using Ansible with Vagrant & Virtualbox. 
 * Ubuntu 16.04
 * Latest ScyllaDB 1.7.x
 
-##Prerequisites
+## Prerequisites
 
 * [Virtualbox](https://www.virtualbox.org/)
 * [Vagrant](https://www.vagrantup.com/downloads.html)
 * [Ansible](http://docs.ansible.com/intro_installation.html)
 
-##Provisioning
+## Provisioning
 
 Clone the project: ```git clone https://github.com/siculars/vagrant-ansible-scylla.git```
 
