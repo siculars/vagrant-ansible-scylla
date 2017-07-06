@@ -1,5 +1,5 @@
 - name: adding scylla repository
-  get_url: url=https://s3.amazonaws.com/downloads.scylladb.com/deb/ubuntu/scylla.list dest=/etc/apt/sources.list.d/scylla.list
+  get_url: url=http://downloads.scylladb.com/deb/ubuntu/scylla-1.7-xenial.list dest=/etc/apt/sources.list.d/scylla.list
 
 - name: updating cache
   apt: update_cache=yes
