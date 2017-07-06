@@ -1,6 +1,8 @@
 ##Introduction
 
-Easily provision 3 ScyllaDB nodes across 3 VMs using Ansible with Vagrant & Virtualbox.
+Easily provision 3 [ScyllaDB](https://github.com/scylladb/scylla) nodes across 3 VMs using Ansible with Vagrant & Virtualbox. 
+* Ubuntu 16.04
+* Latest ScyllaDB 1.7.x
 
 ##Prerequisites
 
@@ -10,7 +12,7 @@ Easily provision 3 ScyllaDB nodes across 3 VMs using Ansible with Vagrant & Virt
 
 ##Provisioning
 
-Clone the project: ```git clone https://github.com/joeljacobson/vagrant-ansible-scylla.git```
+Clone the project: ```git clone https://github.com/siculars/vagrant-ansible-scylla.git```
 
 In the project directory enter: ```vagrant up```
 
@@ -28,3 +30,8 @@ Resume VMs: ```vagrant up```
 
 Destroy the VMs (requires re-provisioning): ```vagrant destroy```
 
+## Next steps
+
+Test out your environment by:
+* connecting to one of the vagrant nodes via ```vagrant ssh node<1|2|3>```, 
+* then test your connection to ScyllaDB via ```cqlsh <ip address>``` by connecting to the ip address of any running nodes. Note, Ansible will apply a specific ip address to the various listener settings in ```templates/scylla.yaml```. Try ```cqlsh 192.168.56.11```.
