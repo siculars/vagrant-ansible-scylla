@@ -506,7 +506,7 @@ commitlog_total_space_in_mb: -1
 # native_transport_max_concurrent_connections_per_ip: -1
 
 # Whether to start the thrift rpc server.
-# start_rpc: true
+start_rpc: true
 
 
 # RPC address to broadcast to drivers and other Scylla nodes. This cannot
